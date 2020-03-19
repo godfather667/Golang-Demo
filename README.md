@@ -1,11 +1,34 @@
-<a href="https://www.velocityworks.io/home">Velocity Works Coding Demo</a>
-# Golang-Demo
+﻿# golang-demo
 
-This Golang application consumes a JSON payload from https://www.data.gov/, populates a database and displays the database contents on a web page.
+## Introduction
+This is a program produced for an employment opportunity.
 
-Frameworks used:
+It will read a JSON file from www.data.gov and display it on a web page.
 
-- Echo to build the website: https://github.com/labstack/echo
-- Resty to retrieve data from Data.gov: https://github.com/go-resty/resty
-- Jsonparser to process the data: https://github.com/buger/jsonparser
-- GORM to populate the database: https://github.com/jinzhu/gorm
+The assignment requirements required the inclusion of the following packages:
+* https://github.com/labstack/echo
+* https://github.com/go-resty/resty
+* https://github.com/buger/jsonparser
+* https://github.com/jinzhu/gorm
+
+I provide two endpoints:
+* localhost:8000/gov  -- Load Data and Build Database
+* localhost:8000/rep  -- Read Database and Display Report Web Page
+
+This program was compiled and tested on a windows system using **go version go1.13.5 windows/amd64**
+
+To Run:
+
+* Compile gov_data.go
+* Run the executable with a web window at localhost:8000
+* Enter the endpoint **/gov** - This acquire the data and build a Database
+* Enter the endpoint **/rep** - This reads the database and displays a Web Page
+
+
+
+
+
+
+
+
+
