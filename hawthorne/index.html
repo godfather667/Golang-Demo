@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="shortcut icon" type="image/png" href="images/hawthornepress.png" />
+<title>Hawthorne Press Company</title>
+</head>
+ 
+<body>
+<div id="container">
+		<div id="header">
+         	<h1>Hawthorne<span class="off"> Press</span></h1>
+            <h2>Consultant C.E. Thornton</h2>
+        </div>   
+        
+  
+<!-- LEFT MENU STARTS HERE -->
+ <!-- LEFT MENU STOPS HERE  -->             
+        
+        
+        <div id="content_top"></div>
+
+
+        <div id="content_main">
+
+<!-- CONTENT STARTS HERE -->
+  
+<h2><Font color=red>www.transportation.gov  --  Cost Savings: 2012-2019</font></p></h2>
+				<td width="100%" valign="top">
+        <hr><br>
+       {{ $c := .Collect }}
+       {{ range $c }}
+       {{ $elem := . }}
+			<p><b>StrategyID:     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  {{index $elem 0 }}  <br>
+			StrategyTitle:     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  {{index $elem 1 }}  </b><br>	
+			DecisionDate:      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  {{index $elem 2 }}  <br>	
+			OmbInitiative:     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  {{index $elem 3 }}  <br>	
+			AmountType:        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  {{index $elem 4 }}  <br>	
+			Fy2012_Amount:     &nbsp&nbsp  {{index $elem 5 }}  <br>	
+			Fy2012_NetOrGross: &nbsp&nbsp  {{index $elem 6 }}  <br>	
+			Fy2013_Amount:     &nbsp&nbsp  {{index $elem 7 }}  <br>	
+			Fy2013_NetOrGross: &nbsp&nbsp  {{index $elem 8 }}  <br>	
+			Fy2014_Amount:     &nbsp&nbsp  {{index $elem 9 }}  <br>	
+			Fy2014_NetOrGross: &nbsp&nbsp  {{index $elem 10 }} <br>
+			Fy2015_Amount:     &nbsp&nbsp  {{index $elem 11 }} <br>
+			Fy2015_NetOrGross: &nbsp&nbsp  {{index $elem 12 }} <br>
+			Fy2016_Amount:     &nbsp&nbsp  {{index $elem 13 }} <br>
+			Fy2016_NetOrGross: &nbsp&nbsp  {{index $elem 14 }} <br>
+			Fy2017_Amount:     &nbsp&nbsp  {{index $elem 15 }} <br>
+			Fy2017_NetOrGross: &nbsp&nbsp  {{index $elem 16 }} <br>
+			Fy2018_Amount:     &nbsp&nbsp  {{index $elem 17 }} <br>
+			Fy2018_NetOrGross: &nbsp&nbsp  {{index $elem 18 }} <br>
+			Fy2019_Amount:     &nbsp&nbsp  {{index $elem 19 }} <br>
+			Fy2019_NetOrGross: &nbsp&nbsp  {{index $elem 20 }} <br><br>
+      </p>
+                       {{end}}
+   <tbody>
+				</td>
+		  </tr>
+  	</table>
+
+<!-- CONTENT ENDS HERE -->
+        </div>
+
+        <div id="content_bottom"></div>
+            
+      </div>
+   </div>
+</body>
+</html>
